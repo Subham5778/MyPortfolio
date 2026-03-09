@@ -487,7 +487,7 @@ function App() {
             </div>
             <div className="flex-1 space-y-6 text-muted/90 text-lg leading-relaxed">
               <p>
-                I'm a final-year Computer Engineering student at D.Y. Patil University, Pune, with a strong foundation in Data Structures & Algorithms, full-stack development, and cybersecurity. I've solved 700+ problems across LeetCode and GeeksforGeeks, ranking in the top 15.63% on LeetCode and 2nd Rank in my university on GFG.
+                I'm a final-year Computer Engineering student at D.Y. Patil University, Pune, with a strong foundation in Data Structures & Algorithms, full-stack development, and cybersecurity. I've solved 700+ problems across LeetCode and GeeksforGeeks, ranking in the top 15.63% on LeetCode and 2nd in my university on GFG.
               </p>
               <p>
                 I'm seeking a software engineering role where I can apply my technical skills to build scalable, production-grade applications and contribute to impactful engineering teams.
