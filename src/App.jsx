@@ -427,6 +427,17 @@ function App() {
                   </span>
                 </div>
               </div>
+
+              <div className="space-y-8">
+                <div className="relative pl-6 before:absolute before:left-0 before:top-2 before:w-2 before:h-2 before:bg-primary before:rounded-full before:ring-4 before:ring-primary/20">
+                  <h4 className="text-lg font-bold">F.N.S. Academy, Patna</h4>
+                  <p className="text-primary text-sm font-medium mb-3 mt-1">Higher Secondary (Class XII) – Science</p>
+                  <span className="inline-block bg-primary text-background font-bold text-sm px-3 py-1 rounded">
+                    PERCENTAGE: 58.50 / 100
+                  </span>
+                </div>
+              </div>
+              
             </div>
 
             {/* Awards Card */}
