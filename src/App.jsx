@@ -464,7 +464,7 @@ function App() {
                   <h4 className="text-lg font-bold">D.Y. Patil University, Pune</h4>
                   <p className="text-primary text-sm font-medium mb-3 mt-1">B.Tech, Computer Engineering</p>
                   <span className="inline-block bg-primary text-background font-bold text-sm px-3 py-1 rounded">
-                    CGPA: 8.21 / 10
+                    CGPA: 8.40 / 10
                   </span>
                 </div>
               </div>
@@ -516,7 +516,7 @@ function App() {
             </div>
             <div className="flex-1 space-y-6 text-muted/90 text-lg leading-relaxed">
               <p>
-                I'm a final-year Computer Engineering student at D.Y. Patil University, Pune, with a strong foundation in Data Structures & Algorithms, full-stack development, and cybersecurity. I've solved 700+ problems across LeetCode and GeeksforGeeks, ranking in the top 15.63% on LeetCode and 2nd Rank in my university on GFG.
+                I'm a Graduate Computer Engineering student at D.Y. Patil University, Pune, with a strong foundation in Data Structures & Algorithms, full-stack development, and cybersecurity. I've solved 500+ problems across LeetCode and GeeksforGeeks, ranking in the top 6..22% on LeetCode and 2nd Rank in my university on GFG.
               </p>
               <p>
                 I'm seeking a software engineering role where I can apply my technical skills to build scalable, production-grade applications and contribute to impactful engineering teams.
