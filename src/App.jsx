@@ -234,118 +234,159 @@ function App() {
           </div>
         </section>
 
-        {/* Projects Section */}
-        <section id="projects" className="scroll-mt-24">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <p className="text-primary font-medium tracking-widest text-sm mb-2 uppercase">PORTFOLIO</p>
-              <h2 className="text-4xl md:text-5xl font-bold">Featured <span className="text-primary">Projects</span></h2>
-            </div>
-            <span className="hidden md:inline-block text-muted tracking-widest text-sm font-medium">02 PROJECTS</span>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Project 1 */}
-            <div className="glass-card p-8 flex flex-col h-full group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
-  
-  <div className="flex justify-between items-start mb-6">
-    
+       {/* Projects Section */}
+<section id="projects" className="scroll-mt-24">
+  <div className="flex justify-between items-end mb-12">
     <div>
-      <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
-        Code and Sweet
-      </h3>
-      <p className="text-muted text-sm font-medium">Jan 2026</p>
+      <p className="text-primary font-medium tracking-widest text-sm mb-2 uppercase">PORTFOLIO</p>
+      <h2 className="text-4xl md:text-5xl font-bold">Featured <span className="text-primary">Projects</span></h2>
+    </div>
+    <span className="hidden md:inline-block text-muted tracking-widest text-sm font-medium">03 PROJECTS</span>
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-6">
+    
+    {/* Project 1: AI Study Companion */}
+    <div className="glass-card p-8 flex flex-col h-full group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+      <div className="flex justify-between items-start mb-6">
+        <div>
+          <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+            AI Study Companion
+          </h3>
+          <p className="text-muted text-sm font-medium">MAY 2026</p>
+        </div>
+        {/* GitHub Link Button */}
+        <a
+          href="https://github.com/Subham5778/AI-Study-Companion"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+          <ExternalLink className="text-primary" size={24} />
+        </a>
+      </div>
+
+      <p className="text-muted/90 mb-6 leading-relaxed">
+        Full-stack study planning application designed specifically for students preparing for placements.
+      </p>
+
+      <ul className="space-y-4 text-muted/90 list-none ml-0 pl-1 mb-8 flex-grow">
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Built a full-stack study planning platform using React.js, Node.js, and MongoDB, integrating Google Gemini AI for automated timetable and mock test generation
+        </li>
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Implemented comprehensive features including focus mode tracking, personalized analytics, and a gamified dashboard
+        </li>
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Secured application with JWT-based authentication using HTTP-only cookies and successfully deployed on Vercel and Render
+        </li>
+      </ul>
+
+      <div className="flex flex-wrap gap-2 mt-auto">
+        {['React.js', 'Node.js', 'MongoDB', 'Gemini AI', 'Tailwind CSS'].map((tech) => (
+          <span
+            key={tech}
+            className="bg-cardBorder/40 text-text/80 text-xs font-semibold px-3 py-1.5 rounded"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
     </div>
 
-    {/* GitHub Link Button */}
-    <a
-      href="https://github.com/Subham5778/CodeandSweet"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="opacity-0 group-hover:opacity-100 transition-opacity"
-    >
-      <ExternalLink className="text-primary" size={24} />
-    </a>
+    {/* Project 2: Code and Sweet */}
+    <div className="glass-card p-8 flex flex-col h-full group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+      <div className="flex justify-between items-start mb-6">
+        <div>
+          <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">
+            Code and Sweet
+          </h3>
+          <p className="text-muted text-sm font-medium">JAN 2026</p>
+        </div>
+        {/* GitHub Link Button */}
+        <a
+          href="https://github.com/Subham5778/CodeandSweet"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+          <ExternalLink className="text-primary" size={24} />
+        </a>
+      </div>
+
+      <p className="text-muted/90 mb-6 leading-relaxed">
+        Full-stack e-commerce web app with responsive UI and REST APIs.
+      </p>
+
+      <ul className="space-y-4 text-muted/90 list-none ml-0 pl-1 mb-8 flex-grow">
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Built a full-stack e-commerce web app using React.js, Tailwind CSS, Node.js, and MongoDB Atlas with responsive UI and REST APIs
+        </li>
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Integrated Cloudinary for secure image upload and storage, enabling efficient product and admin management
+        </li>
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Enhanced application performance and scalability by ~40% through optimized API design and efficient database queries
+        </li>
+      </ul>
+
+      <div className="flex flex-wrap gap-2 mt-auto">
+        {['React.js', 'Tailwind CSS', 'Node.js', 'MongoDB Atlas', 'Cloudinary'].map((tech) => (
+          <span
+            key={tech}
+            className="bg-cardBorder/40 text-text/80 text-xs font-semibold px-3 py-1.5 rounded"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
+
+    {/* Project 3: Bank Management System */}
+    <div className="glass-card p-8 flex flex-col h-full group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+      <div className="flex justify-between items-start mb-6">
+        <div>
+          <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Bank Management System</h3>
+          <p className="text-muted text-sm font-medium">FEB 2025</p>
+        </div>
+        {/* GitHub Link Button */}
+        <a 
+          href="https://github.com/Subham5778/Bank-System"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+          <ExternalLink className="text-primary" size={24} />
+        </a>
+      </div>
+      
+      <p className="text-muted/90 mb-6 leading-relaxed">
+        Java-based multi-account banking system using OOP principles.
+      </p>
+      
+      <ul className="space-y-4 text-muted/90 list-none ml-0 pl-1 mb-8 flex-grow">
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Built a Java-based multi-account banking system using OOP principles to manage checking and savings accounts
+        </li>
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Implemented deposits, withdrawals, transfers, interest calculation, and transaction history
+        </li>
+        <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
+          Added user authentication (register/login) with proper input validation for reliability and usability
+        </li>
+      </ul>
+      
+      <div className="flex flex-wrap gap-2 mt-auto">
+        {['Java', 'OOP', 'ArrayList'].map(tech => (
+          <span key={tech} className="bg-cardBorder/40 text-text/80 text-xs font-semibold px-3 py-1.5 rounded">
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div>
 
   </div>
-
-  <p className="text-muted/90 mb-6 leading-relaxed">
-    Full-stack e-commerce web app with responsive UI and REST APIs.
-  </p>
-
-  <ul className="space-y-4 text-muted/90 list-none ml-0 pl-1 mb-8 flex-grow">
-
-    <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
-      Built a full-stack e-commerce web app using React.js, Tailwind CSS, Node.js, and MongoDB Atlas with responsive UI and REST APIs
-    </li>
-
-    <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
-      Integrated Cloudinary for secure image upload and storage, enabling efficient product and admin management
-    </li>
-
-    <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
-      Enhanced application performance and scalability by ~40% through optimized API design and efficient database queries
-    </li>
-
-  </ul>
-
-  <div className="flex flex-wrap gap-2 mt-auto">
-    {['React.js', 'Tailwind CSS', 'Node.js', 'MongoDB Atlas', 'Cloudinary'].map((tech) => (
-      <span
-        key={tech}
-        className="bg-cardBorder/40 text-text/80 text-xs font-semibold px-3 py-1.5 rounded"
-      >
-        {tech}
-      </span>
-    ))}
-  </div>
-
-</div>
-
-            {/* Project 2 */}
-            <div className="glass-card p-8 flex flex-col h-full group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
-              <div className="flex justify-between items-start mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Bank Management System</h3>
-                  <p className="text-muted text-sm font-medium">FEB 2025</p>
-                </div>
-                {/* GitHub Link Button */}
-                <a 
-                 href="https://github.com/Subham5778/Bank-System"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="opacity-0 group-hover:opacity-100 transition-opacity"
-                >
-                 <ExternalLink className="text-primary" size={24} />
-               </a>
-              </div>
-              
-              <p className="text-muted/90 mb-6 leading-relaxed">
-                Java-based multi-account banking system using OOP principles.
-              </p>
-              
-              <ul className="space-y-4 text-muted/90 list-none ml-0 pl-1 mb-8 flex-grow">
-                <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
-                  Built a Java-based multi-account banking system using OOP principles to manage checking and savings accounts
-                </li>
-                <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
-                  Implemented deposits, withdrawals, transfers, interest calculation, and transaction history
-                </li>
-                <li className="relative before:absolute before:left-[-1.25rem] before:top-[0.6rem] before:w-0 before:h-0 before:border-t-[4px] before:border-t-transparent before:border-l-[6px] before:border-l-primary before:border-b-[4px] before:border-b-transparent ml-5">
-                  Added user authentication (register/login) with proper input validation for reliability and usability
-                </li>
-              </ul>
-              
-              <div className="flex flex-wrap gap-2 mt-auto">
-                {['Java', 'OOP', 'ArrayList'].map(tech => (
-                  <span key={tech} className="bg-cardBorder/40 text-text/80 text-xs font-semibold px-3 py-1.5 rounded">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+</section>
 
         {/* Skills Section */}
         <section id="skills" className="scroll-mt-24">
