@@ -371,7 +371,7 @@ function App() {
             </div>
             <div className="flex-1 space-y-6 text-muted text-base md:text-lg leading-relaxed border-l-0 md:border-l border-cardBorder/60 md:pl-8">
               <p>
-                I am a final-year B.Tech student in Computer Engineering with strong core fundamentals in Data Structures & Algorithms, Operating Systems, Database Management Systems, and Computer Networks.
+                I am a  B.Tech graduate in Computer Engineering with strong core fundamentals in Data Structures & Algorithms, Operating Systems, Database Management Systems, and Computer Networks.
               </p>
               <p>
                 From building complex AI applications like <strong>AI Study Companion</strong> using modern MERN stacks, to analyzing server security setups, I love turning technical puzzles into elegant, high-performing software.
