@@ -95,7 +95,7 @@ function App() {
             >
               <Linkedin size={20} />
             </a>
-            <a href="https://leetcode.com/u/Subham5778/"
+            <a href="https://leetcode.com/u/Subham57/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted hover:text-primary transition-colors"
