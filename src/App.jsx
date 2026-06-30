@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Briefcase, GraduationCap, ChevronDown, Mail, Github, Linkedin, ExternalLink, Award, Trophy, Phone, MapPin, Code, Layers } from 'lucide-react';
+import { Briefcase, GraduationCap, ChevronDown, Mail, Github, Linkedin, ExternalLink, Award, Trophy, Phone, MapPin, Code, Layers, Eye, Download } from 'lucide-react';
 import { SiLeetcode } from "react-icons/si";
 
 function App() {
@@ -129,8 +129,22 @@ function App() {
             <a href="#projects" className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-text px-8 py-4 rounded-xl font-medium transition-all shadow-lg shadow-primary/20">
               Explore Projects
             </a>
-            <a href="#experience" className="glass-card px-8 py-4 rounded-xl font-medium hover:text-primary transition-all">
-              Work History
+            <a 
+              href="https://drive.google.com/file/d/1cWhmujcLXv2L300Cc3gtQndFYDjhh7l4/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="glass-card px-6 py-4 rounded-xl font-medium hover:text-primary transition-all flex items-center gap-2"
+            >
+              <Eye size={18} />
+              View Resume
+            </a>
+            <a 
+              href="/Resum.pdf" 
+              download="Subham_Kumar_Resume.pdf" 
+              className="glass-card px-6 py-4 rounded-xl font-medium hover:text-primary transition-all flex items-center gap-2"
+            >
+              <Download size={18} />
+              Download Resume
             </a>
             <a href="mailto:subham.nchs5778@gmail.com" className="glass-card px-6 py-4 rounded-xl font-medium hover:text-primary transition-all flex items-center gap-2">
               <Mail size={18} />
@@ -371,7 +385,7 @@ function App() {
             </div>
             <div className="flex-1 space-y-6 text-muted text-base md:text-lg leading-relaxed border-l-0 md:border-l border-cardBorder/60 md:pl-8">
               <p>
-                I am a  B.Tech graduate in Computer Engineering with strong core fundamentals in Data Structures & Algorithms, Operating Systems, Database Management Systems, and Computer Networks.
+                I am a B.Tech graduate in Computer Engineering with strong core fundamentals in Data Structures & Algorithms, Operating Systems, Database Management Systems, and Computer Networks.
               </p>
               <p>
                 From building complex AI applications like <strong>AI Study Companion</strong> using modern MERN stacks, to analyzing server security setups, I love turning technical puzzles into elegant, high-performing software.
