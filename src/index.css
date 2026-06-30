@@ -1,39 +1,51 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #111111;
-  --color-primary: #f59e0b;
-  --color-text: #f3f4f6;
-  --color-muted: #9ca3af;
-  --color-cardBg: #1f1f1f;
-  --color-cardBorder: #374151;
+  --color-background: #0b0f19;
+  --color-primary: #3b82f6; /* Premium Indigo/Blue */
+  --color-accent: #a855f7; /* Violet/Purple accent */
+  --color-text: #f8fafc;
+  --color-muted: #94a3b8;
+  --color-cardBg: rgba(15, 23, 42, 0.4);
+  --color-cardBorder: rgba(255, 255, 255, 0.08);
 }
 
 @layer base {
   body {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.08) 0px, transparent 50%);
+    background-attachment: fixed;
   }
   
   ::selection {
     background-color: color-mix(in srgb, var(--color-primary) 30%, transparent);
-    color: var(--color-primary);
+    color: var(--color-text);
   }
 }
 
 @layer utilities {
   .glass-card {
-    background-color: color-mix(in srgb, var(--color-cardBg) 80%, transparent);
-    backdrop-filter: blur(12px);
+    background-color: var(--color-cardBg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--color-cardBorder);
-    border-radius: 0.75rem;
-    transition-property: color, background-color, border-color;
-    transition-duration: 300ms;
+    border-radius: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .glass-card:hover {
-    border-color: color-mix(in srgb, var(--color-primary) 50%, transparent);
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
   }
 }
+
