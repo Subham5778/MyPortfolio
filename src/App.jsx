@@ -122,7 +122,7 @@ function App() {
             Hi, I'm <span className="bg-gradient-to-r from-primary via-accent to-blue-400 bg-clip-text text-transparent">Subham</span>
           </h1>
           <p className="text-muted text-lg md:text-xl max-w-3xl mb-10 leading-relaxed">
-            Computer Engineering student at D.Y. Patil University. Passionate about building robust full-stack applications (MERN, APIs) and solving algorithmic puzzles. Highly analytical with a LeetCode rating of <span className="text-text font-bold bg-primary/20 px-1.5 py-0.5 rounded">1849 (Knight badge)</span>.
+            Computer Engineering student at D.Y. Patil University. Passionate about building robust full-stack applications (MERN, APIs) and solving algorithmic puzzles. Highly analytical with a LeetCode rating of <span className="text-text font-bold bg-primary/20 px-1.5 py-0.5 rounded">1874 (Knight badge)</span>.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -351,7 +351,7 @@ function App() {
               <ul className="space-y-4 text-muted text-sm">
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0"></span>
-                  <span><strong>LeetCode Knight Badge:</strong> Maximum rating of 1849, solving over 100+ high-quality problems.</span>
+                  <span><strong>LeetCode Knight Badge:</strong> Maximum rating of 1874, solving over 100+ high-quality problems.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0"></span>
